@@ -1,5 +1,7 @@
 ideas from other site:
-testimonials
-activities (companies/private)
+About
 ships
+activities (companies/private)
+testimonials (carroussel)
 faq
+Contact
