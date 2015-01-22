@@ -1,12 +1,4 @@
 ideas from other site:
-<<<<<<< HEAD
-About
-ships
-activities (companies/private)
-testimonials (carroussel)
-faq
-Contact
-=======
 2 languages
 about
 ship
@@ -14,4 +6,10 @@ activities
 testimonials
 (faq)?
 contact
->>>>>>> origin/master
+
+----------------
+competitors
+http://www.raboattours.com/
+http://www.blueheavenportugal.com/pt/index.html
+http://www.palmayachts.pt/pt/view/news/newsun88/2012/05/14/iate-de-luxo-na-palmayachts
+http://www.seaventy.pt/
