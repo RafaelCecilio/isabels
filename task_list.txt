@@ -1,7 +1,17 @@
 ideas from other site:
+<<<<<<< HEAD
 About
 ships
 activities (companies/private)
 testimonials (carroussel)
 faq
 Contact
+=======
+2 languages
+about
+ship
+activities
+testimonials
+(faq)?
+contact
+>>>>>>> origin/master
