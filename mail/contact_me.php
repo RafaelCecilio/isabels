@@ -10,17 +10,32 @@ if(empty($_POST['name'])  		||
 	return false;
    }
 	
+require_once 'swift/lib/swift_required.php';
+
+// parse input
 $name = $_POST['name'];
-$email_address = $_POST['email'];
+$email_from = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-	
+
+$to_email='isabelsyachts@gmail.com';
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+  ->setUsername($to_email)
+  ->setPassword('isabels01');
+
+$mailer = Swift_Mailer::newInstance($transport);
+
 // Create the email and send the message
-$to = 'rafa_rsc@hotmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@isabelsyachts.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";	
+$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_from\n\nPhone: $phone\n\nMessage:\n$message";
 mail($to,$email_subject,$email_body,$headers);
+
+$message = Swift_Message::newInstance($email_subject)
+  ->setFrom(array($email_from => $name))
+  ->setTo(array($to_email))
+  ->setBody($email_body);
+
+$result = $mailer->send($message);
+
 return true;			
 ?>
