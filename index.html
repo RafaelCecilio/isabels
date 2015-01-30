@@ -32,6 +32,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- bootstrap gallery -->
+    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.css">
 </head>
 
 <body id="page-top" class="index">
@@ -152,7 +156,9 @@ A nossa empresa tem como objetivo o transporte de pessoas a bordo do ISABELS III
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
-            <div class="row" id="espacinho">
+            <div id="boat-gallery">
+            </div>
+<!--             <div class="row" id="espacinho">
                 <div class="col-md-3 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <img src="img/boat/aluguer-barco-iate-lisboa-festas.jpg" class="img-circle img-responsive" alt="">
@@ -195,7 +201,7 @@ A nossa empresa tem como objetivo o transporte de pessoas a bordo do ISABELS III
                         <img src="img/boat/P1000579.jpg" class="img-circle img-responsive" alt="">
                     </a>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3 class="section-subheading text-muted">
@@ -364,43 +370,15 @@ Barco de apoio<br>
                     <h3 class="section-subheading text-muted">Veja alguns eventos já realizados por nós</h3>
                 </div>
             </div>
-            <div class="row" id="espacinho">
-                <h3 class="section-subheading text-muted text-left">Jantar temático de aniversário</h3>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#eventosModal1" class="portfolio-link" data-toggle="modal">
-                        <img src="img/events/1.JPG" class="img-circle img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#eventosModal2" class="portfolio-link" data-toggle="modal">
-                        <img src="img/events/2.JPG" class="img-circle img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#eventosModal3" class="portfolio-link" data-toggle="modal">
-                        <img src="img/events/3.JPG" class="img-circle img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#eventosModal4" class="portfolio-link" data-toggle="modal">
-                        <img src="img/events/4.JPG" class="img-circle img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="row" id="espacinho">
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                        <a href="#eventosModal5" class="portfolio-link" data-toggle="modal">
-                            <img src="img/events/5.JPG" class="img-circle img-responsive" alt="">
-                        </a>
-                </div>
+            <div id="events-gallery">
             </div>
             <div class="row">
                 <h3 class="section-subheading text-muted text-left">Passeio de Lisboa até Vilamoura</h3>
-                <div class="col-md-3 col-sm-6 portfolio-item">
+<!--                 <div class="col-md-3 col-sm-6 portfolio-item">
                     <a href="#eventosModal6" class="portfolio-link" data-toggle="modal">
                         <img src="img/events/6.JPG" class="img-circle img-responsive" alt="">
                     </a>
-                </div>
+                </div> -->
                 <!-- 16:9 aspect ratio -->
                 <div class="col-md-3 col-sm-6">
                     <iframe width="560" height="315" src="//www.youtube.com/embed/H6aQyYn3gLM" frameborder="0" allowfullscreen></iframe>
@@ -554,267 +532,36 @@ Barco de apoio<br>
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/aluguer-barco-iate-lisboa-festas2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                            Previous
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Next
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/aluguer-barco-iate-portugal2.jpg" alt="">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/aluguer-barco-iate-lisboa2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/aluguer-barco-iate-cascais2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/P1000570.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/P1000572.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 7 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/P1000581.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 8 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/boat/P1000579.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Eventos Modal 1 -->
-    <div class="portfolio-modal modal fade" id="eventosModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/events/1.JPG" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Eventos Modal 2 -->
-    <div class="portfolio-modal modal fade" id="eventosModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/events/2.JPG" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Eventos Modal 3 -->
-    <div class="portfolio-modal modal fade" id="eventosModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/events/3.JPG" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Eventos Modal 4 -->
-    <div class="portfolio-modal modal fade" id="eventosModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/events/4.JPG" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Eventos Modal 5 -->
-    <div class="portfolio-modal modal fade" id="eventosModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/events/5.JPG" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Eventos Modal 6 -->
-    <div class="portfolio-modal modal fade" id="eventosModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h2>ISABELS III</h2>
-                    <img class="img-responsive img-centered" src="img/events/6.JPG" alt="">
                 </div>
             </div>
         </div>
@@ -837,6 +584,14 @@ Barco de apoio<br>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <!-- Bootstrap Gallery -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <!-- Bootstrap JS is not required, but included for the responsive demo navigation and button states -->
+    <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script> -->
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.js"></script>
+    <script src="js/gallery.js"></script>
 
 </body>
 
