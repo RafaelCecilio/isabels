@@ -25,9 +25,14 @@ $(function () {
         'aluguer-barco-iate-lisboa2.jpg', 'aluguer-barco-iate-cascais2.jpg',
         'P1000570.jpg', 'P1000572.jpg', 'P1000581.jpg', 'P1000579.jpg'],
         string: "Barco", img_path: 'img/boat/',
-        id_cat: 'boat-gallery', title: undefined};
+        id_cat: 'boat-gallery', title: "O exterior"};
+    var boat_int = {imgs: ['Fotografia0091.jpg', 'Fotografia0092.jpg', 'Fotografia0093.jpg',
+        'Fotografia0096.jpg', 'Fotografia0097.jpg', 'Fotografia0098.jpg', 'Fotografia0099.jpg',
+        'Fotografia0100.jpg', 'Fotografia0101.jpg'],
+        string: "O interior do barco", img_path: 'img/boat/interior/',
+        id_cat: 'boat-int-gallery', title: "O interior"};
     var category;
-    var categories=[boat, events];
+    var categories=[boat, events,boat_int];
     /*var categories=[events];*/
     for(var i=0; i<categories.length; i++){
         category = categories[i];
