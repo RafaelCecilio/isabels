@@ -18,16 +18,13 @@ $(function () {
     var events = {imgs: ['1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', '6.JPG'],
         string: "Jantar temático de aniversário", img_path: 'img/events/',
         id_cat: 'events-gallery', title: "Jantar temático de aniversário"};
-/*    var boat = {imgs: ['aluguer-barco-iate-lisboa-festas.jpg', 'aluguer-barco-iate-portugal.jpg',
-        'aluguer-barco-iate-lisboa.jpg', 'aluguer-barco-iate-cascais.jpg',
-        'P1000570.jpg', 'P1000572.jpg', 'P1000581.jpg', 'P1000579.jpg'],*/
     var boat = {imgs: ['aluguer-barco-iate-lisboa-festas2.jpg', 'aluguer-barco-iate-portugal2.jpg',
         'aluguer-barco-iate-lisboa2.jpg', 'aluguer-barco-iate-cascais2.jpg',
         'P1000570.jpg', 'P1000572.jpg', 'P1000581.jpg', 'P1000579.jpg'],
         string: "Barco", img_path: 'img/boat/',
         id_cat: 'boat-gallery', title: "O exterior"};
     var boat_int = {imgs: ['Fotografia0091.jpg', 'Fotografia0092.jpg', 'Fotografia0093.jpg',
-        'Fotografia0096.jpg', 'Fotografia0097.jpg', 'Fotografia0098.jpg', 'Fotografia0099.jpg',
+        'Fotografia0096.jpg', 'Fotografia0098.jpg', 'Fotografia0099.jpg',
         'Fotografia0100.jpg', 'Fotografia0101.jpg'],
         string: "O interior do barco", img_path: 'img/boat/interior/',
         id_cat: 'boat-int-gallery', title: "O interior"};
