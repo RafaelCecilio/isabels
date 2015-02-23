@@ -1,7 +1,8 @@
-
+<?php
+include_once 'common.php';
+?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang=<?php echo $lang['LANG']; ?>>
 <head>
 
     <meta charset="utf-8">
@@ -11,7 +12,7 @@
     <meta name="author" content="Isabels Yachts">
     <meta name="keywords" content="barcos para alugar em Lisboa, iates para alugar em Lisboa, iates para alugar em Lisboa, Lisboa vista do Tejo, barcos em Lisboa">
 
-    <title>Isabels Yachts - Alugar barcos/iates em Lisboa</title>
+    <title><?php echo $lang['PAGE_TITLE']; ?></title>
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 
     <!-- Bootstrap Core CSS -->
@@ -64,9 +65,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Isabels III Yachts and Charters</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><?php echo $lang['NAVBAR_TITLE']; ?></a>
+                <a class="navbar-brand page-scroll" href="index.php?lang=pt"><img src="img/pt.png" /></a>
+                <a class="navbar-brand page-scroll" href="index.php?lang=en"><img src="img/en.png" /></a>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top"><?php echo $lang['NAVBAR_TITLE']; ?></a> -->
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -74,19 +77,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Quem somos</a>
+                        <a class="page-scroll" href="#about"><?php echo $lang['NAVBAR_ABOUT']; ?></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#ship">Barco</a>
+                        <a class="page-scroll" href="#ship"><?php echo $lang['NAVBAR_SHIP']; ?></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#activities">Atividades</a>
+                        <a class="page-scroll" href="#activities"><?php echo $lang['NAVBAR_ACTIVITIES']; ?></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#eventos">Eventos</a>
+                        <a class="page-scroll" href="#eventos"><?php echo $lang['NAVBAR_EVENTS']; ?></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contacto</a>
+                        <a class="page-scroll" href="#contact"><?php echo $lang['NAVBAR_CONTACT']; ?></a>
                     </li>
                 </ul>
             </div>
@@ -99,9 +102,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Bem-vindo ao Isabels III Yachts and Charters</div>
+                <div class="intro-heading"><?php echo $lang['HEADER_TITLE']; ?></div>
 
-                <a href="#about" class="page-scroll btn btn-xl">Mais</a>
+                <a href="#about" class="page-scroll btn btn-xl"><?php echo $lang['HEADER_MORE']; ?></a>
             </div>
         </div>
     </header>
@@ -111,11 +114,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center" >
-                    <h2 class="section-heading">Quem somos</h2>
-                    <h3 class="section-subheading text-muted" style="margin: 50px; background-color: #ffffff; opacity:0.8; filter:alpha(opacity=80); border-radius: 6px "><br>Somos uma empresa que exerce a atividade de operador marítimo turístico licenciada pelo Turismo de Portugal com o número 344/2013.<br><br>
-A nossa empresa tem como objetivo o transporte de pessoas a bordo do ISABELS III, proporcionando aos mesmos um original e único transporte com diversão e assistência a bordo.
-<br><br>
-Fazemos também o aluguer de barcos e iates, charters yachts, passeios de barco, eventos em barcos, festas de aniversário e de despedidas de solteiro.
+                    <h2 class="section-heading"><?php echo $lang['ABOUT_TITLE']; ?></h2>
+                    <h3 class="section-subheading text-muted" style="margin: 50px; background-color: #ffffff; opacity:0.8; filter:alpha(opacity=80); border-radius: 6px "><?php echo $lang['ABOUT_TEXT']; ?>
 					</h3>
                 </div>
             </div>
@@ -134,7 +134,7 @@ Fazemos também o aluguer de barcos e iates, charters yachts, passeios de barco,
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">O Barco</h2>
+                    <h2 class="section-heading"><?php echo $lang['ABOUT_TITLE']; ?></h2>
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
@@ -145,25 +145,7 @@ Fazemos também o aluguer de barcos e iates, charters yachts, passeios de barco,
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3 class="section-subheading text-muted">
-Dados técnicos<br>
-<br>
-Lotação: 10 pessoas<br>
-Comprimento: 15 m<br>
-Boca: 4,20m<br>
-2 motores turbo diesel 500 + 500 cv<br>
-2 postos de comando<br>
-GPS, radar, sonda, VHF, Piloto automático<br>
-3 quartos, sendo um em suite<br>
-2 casas de banho<br>
-1 quarto para 1 tripulante<br>
-4 televisões LCD<br>
-Internet + 100 Canais de televisão<br>
-Gerador<br>
-Ar condicionado<br>
-Máquina de gelo, Cozinha com micro ondas, forno, máquina de café, frigorífico, fogão<br>
-Barco de apoio<br>
-5 sistemas de som independente no total (3 quartos, sala e fly)<br>
-Água quente ilimitada e com saída na plataforma de banho<br>
+                    <?php echo $lang['BOAT_SPECS']; ?>
                     </h3>
                 </div>
             </div>
@@ -175,7 +157,7 @@ Barco de apoio<br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Atividades</h2>
+                    <h2 class="section-heading"><?php echo $lang['ACTIV_TITLE']; ?></h2>
                 </div>
             </div>
             <div class="row">
@@ -187,12 +169,11 @@ Barco de apoio<br>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Fim de Tarde</h4>
-                                    <h4 class="subheading">2 horas - 500€</h4>
+                                    <h4><?php echo $lang['ACTIV_AFTERNOON']; ?></h4>
+                                    <h4 class="subheading">2 <?php echo $lang['ACTIV_HOURS']; ?> - 500€</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Este pacote contém um passeio pela frente ribeirinha junto à baixa de Lisboa.<br>
-                                        Águas e refrigerantes a bordo incluídos.</p>
+                                    <p class="text-muted"><?php echo $lang['ACTIV_AFTERNOON_INCLUDE']; ?></p>
                                 </div>
                             </div>
                         </li>
@@ -202,12 +183,11 @@ Barco de apoio<br>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Meio Dia</h4>
-                                    <h4 class="subheading">4 horas - 950€</h4>
+                                    <h4><?php echo $lang['ACTIV_HALF']; ?></h4>
+                                    <h4 class="subheading">4 <?php echo $lang['ACTIV_HOURS']; ?> - 950€</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Combustível limitado à distância Lisboa-Cascais.<br>
-                                        Águas e refrigerantes a bordo incluídos.</p>
+                                    <p class="text-muted"><?php echo $lang['ACTIV_HALF_INCLUDE']; ?></p>
                                 </div>
                             </div>
                         </li>
@@ -217,12 +197,11 @@ Barco de apoio<br>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Todo o Dia</h4>
-                                    <h4 class="subheading">8 horas - 1900€</h4>
+                                    <h4><?php echo $lang['ACTIV_FULL']; ?></h4>
+                                    <h4 class="subheading">8 <?php echo $lang['ACTIV_HOURS']; ?> - 1900€</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Combustível limitado à distância Lisboa-Cascais.<br>
-                                        Águas e refrigerantes a bordo incluídos.</p>
+                                    <p class="text-muted"><?php echo $lang['ACTIV_FULL_INCLUDE']; ?></p>
                                 </div>
                             </div>
                         </li>
@@ -258,54 +237,40 @@ Barco de apoio<br>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Escolha o seu pacote</h4>
+                                    <h4><?php echo $lang['ACTIV_CUSTOM']; ?></h4>
                                     <!--<h4 class="subheading">Preços sob consulta.</h4>-->
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Decida o seu dia: festas de aniversário, despedidas de solteiro, almoços ou jantares de negócios ou mais desportivos como jet ski, mota de água, ski aquático, wakeboard e bóias de animação. Para estes ou outros pacotes, <a class="page-scroll" href="#contact">informe-se connosco</a> sobre condições e preços.</p>
+                                    <p class="text-muted"><?php echo $lang['ACTIV_CUSTOM_INCLUDE']; ?></p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <h4>O que
-                                    <br>dizem
-                                    <br>de nós</h4>
+                                <h4><?php echo $lang['TEST_CIRCLE']; ?></h4>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Testemunhos:</h4>
+                                    <h4><?php echo $lang['TEST_TITLE']; ?>:</h4>
                                 </div>
                                 <div class="timeline-body">
                                     <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
                                         <!-- Wrapper for slides -->
                                         <div class="carousel-inner" role="listbox">
                                             <div class="item active">
-                                                <div class="carousel-content text-center">
-                                                    <p>
-                                                        Tive uma experiência fantástica a bordo do Isabels III. O passeio até Cascais foi simplesmente relaxante.
-                                                    </p>
-                                                </div>
+                                                <div class="carousel-content text-center"><?php echo $lang['TEST1']; ?></div>
                                             </div>
                                             <div class="item">
-                                                <div class="carousel-content text-center">
-                                                    <p>O Isabels III está muito bem equipado e o jantar de aniversário não podia ter corrido melhor.</p>
-                                                </div>
+                                                <div class="carousel-content text-center"><?php echo $lang['TEST2']; ?></div>
                                             </div>
                                             <div class="item">
-                                                <div class="carousel-content text-center">
-                                                    <p>Lisboa vista do tejo é maravilhosa. Vista do Isabels III é melhor ainda. Recomendo sem dúvida. </p>
-                                                </div>
+                                                <div class="carousel-content text-center"><?php echo $lang['TEST3']; ?></div>
                                             </div>
                                             <div class="item">
-                                                <div class="carousel-content text-center">
-                                                    <p>Passar o ano junto ao Terreiro do Paço a bordo do ISABELS III é uma experiência única! Foi inesquecível ver do fogo de artifício!</p>
-                                                </div>
+                                                <div class="carousel-content text-center"><?php echo $lang['TEST4']; ?></div>
                                             </div>
                                             <div class="item">
-                                                <div class="carousel-content text-center">
-                                                    <p>Para quem enjoa este barco é perfeito, muito estável. Para além disso é super confortável, parece a nossa casa, consegue-se navegar sem nos molharmos. É para repetir!</p>
-                                                </div>
+                                                <div class="carousel-content text-center"><?php echo $lang['TEST5']; ?></div>
                                             </div>
                                         </div>
                                         <!-- Controls -->
@@ -326,7 +291,7 @@ Barco de apoio<br>
             </div>
             <div class="row">
 	            <div class="col-lg-12 text-center">
-	                <h3 class="section-subheading text-muted">Preços incluiem a taxa de IVA em vigor.</h3>
+	                <h3 class="section-subheading text-muted"><?php echo $lang['ACTIV_DISCLOSURE']; ?></h3>
 	            </div>
             </div>
             
@@ -338,14 +303,13 @@ Barco de apoio<br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Eventos</h2>
-                    <h3 class="section-subheading text-muted">Veja alguns eventos já realizados por nós</h3>
+                    <h2 class="section-heading"><?php echo $lang['EVENTS_TITLE']; ?></h2>
+                    <h3 class="section-subheading text-muted"><?php echo $lang['EVENTS_SUBTITLE']; ?></h3>
                 </div>
             </div>
-            <div id="events-gallery">
-            </div>
+            <div id="events-gallery"></div>
             <div class="row">
-                <h3 class="section-subheading text-muted text-left">Passeio de Lisboa até Vilamoura</h3>
+                <h3 class="section-subheading text-muted text-left"><?php echo $lang['EVENTS_VIDEO_VILAMOURA']; ?></h3>
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe class="embed-responsive-item" src="//www.youtube.com/embed/H6aQyYn3gLM"></iframe>
                 </div>
@@ -359,8 +323,8 @@ Barco de apoio<br>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contacto</h2>
-                    <h3 class="section-subheading text-muted" style="color: #ffffff">Deixe-nos a sua mensagem e entraremos em contacto consigo.</h3>
+                    <h2 class="section-heading"><?php echo $lang['CONTACT_TITLE']; ?></h2>
+                    <h3 class="section-subheading text-muted" style="color: #ffffff"><?php echo $lang['CONTACT_TEXT']; ?></h3>
                 </div>
             </div>
             <div class="row">
@@ -369,36 +333,35 @@ Barco de apoio<br>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nome *" id="name" required data-validation-required-message="Por favor introduza o seu nome.">
+                                    <input type="text" class="form-control" placeholder=<?php echo '"'.$lang['CONTACT_NAME'].' *"'; ?> id="name" required data-validation-required-message=<?php echo '"'.$lang['CONTACT_NAME_HELP'].'"'; ?>>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message="Por favor introduza o seu email.">
+                                    <input type="email" class="form-control" placeholder="Email *" id="email" required data-validation-required-message=<?php echo '"'.$lang['CONTACT_EMAIL_HELP'].'"'; ?>>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Telemóvel *" id="phone" required data-validation-required-message="Por favor introduza o seu número de telemóvel.">
+                                    <input type="tel" class="form-control" placeholder=<?php echo '"'.$lang['CONTACT_PHONE'].' *"'; ?> id="phone" required  data-validation-required-message=<?php echo '"'.$lang['CONTACT_PHONE_HELP'].'"'; ?>>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="A sua Mensagem *" id="message" required data-validation-required-message="Por favor introduza a sua mensagem."></textarea>
+                                    <textarea class="form-control" placeholder=<?php echo '"'.$lang['CONTACT_MSG'].' *"'; ?> id="message" required data-validation-required-message=<?php echo '"'.$lang['CONTACT_MSG_HELP'].'"'; ?>></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Enviar Mensagem</button>
+                                <button type="submit" class="btn btn-xl"><?php echo $lang['CONTACT_SEND']; ?></button>
                             </div>
                         </div>
                     </form>
                 </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted" style="color: white">Ou contacte-nos directamente<br>Isabels III<br>+351 968 058 417<br>geral@isabelsyachts.pt
-					</h3>
+                    <h3 class="section-subheading text-muted" style="color: white"><?php echo $lang['CONTACT_MORE']; ?></h3>
                 </div>
             </div>
             </div>
@@ -413,18 +376,18 @@ Barco de apoio<br>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/isabels3.yachts"><i class="fa fa-facebook"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+<!--                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>
