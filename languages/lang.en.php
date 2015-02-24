@@ -24,7 +24,7 @@ $lang['HEADER_MORE'] = 'More';
 
 // About
 $lang['ABOUT_TITLE'] = 'About';
-$lang['ABOUT_TEXT'] = '<br>We are a maritime touristic operator licensed by Tourism of Portugal with the number 344/2013.<br><br>Our company objective is to transport people aboard ISABELS III, providing them an original and exquisite experience with fun and with on board support.<br><br>We also rent boats and yachts, charters yachts, boat tours, boat events, birthday parties and bachelor parties.';
+$lang['ABOUT_TEXT'] = '<br>We are a maritime touristic operator licensed by Tourism of Portugal with the number 344/2013.<br><br>Our company objective is to transport people aboard ISABELS III, providing them an original and exquisite experience with fun and with on board support.<br><br>We also rent boats and yachts, charters yachts, boat tours, organize boat events, birthday parties and bachelor parties.';
 
 // Boat
 $lang['BOAT_TITLE'] = 'The boat';
@@ -32,7 +32,7 @@ $lang['BOAT_SPECS'] = 'Technical Specifications<br>
 <br>
 Capacity: 10 people<br>
 Length: 15 m<br>
-Beam: 4,20m<br>
+Beam: 4.20 m<br>
 2 turbo diesel engines 500 + 500 hp<br>
 2 captain bridges<br>
 GPS, radar, sounder, VHF, auto pilot<br>

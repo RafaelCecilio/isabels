@@ -24,7 +24,7 @@ $lang['HEADER_MORE'] = 'Mais';
 
 // About
 $lang['ABOUT_TITLE'] = 'Quem somos';
-$lang['ABOUT_TEXT'] = '<br>Somos uma empresa que exerce a atividade de operador marítimo turístico licenciada pelo Turismo de Portugal com o número 344/2013.<br><br>A nossa empresa tem como objetivo o transporte de pessoas a bordo do ISABELS III, proporcionando aos mesmos um original e único transporte com diversão e assistência a bordo.<br><br>Fazemos também o aluguer de barcos e iates, charters yachts, passeios de barco, eventos em barcos, festas de aniversário e de despedidas de solteiro.';
+$lang['ABOUT_TEXT'] = '<br>Somos uma empresa que exerce a atividade de operador marítimo turístico licenciada pelo Turismo de Portugal com o número 344/2013.<br><br>A nossa empresa tem como objetivo o transporte de pessoas a bordo do ISABELS III, proporcionando aos mesmos um original e único transporte com diversão e assistência a bordo.<br><br>Fazemos também o aluguer de barcos e iates, charters yachts, passeios de barco, organizamos eventos em barcos, festas de aniversário e despedidas de solteiro.';
 
 // Boat
 $lang['BOAT_TITLE'] = 'O Barco';
@@ -73,7 +73,7 @@ $lang['TEST3']='<p>Lisboa vista do tejo é maravilhosa. Vista do Isabels III é 
 $lang['TEST4']='<p>Passar o ano junto ao Terreiro do Paço a bordo do ISABELS III é uma experiência única! Foi inesquecível ver do fogo de artifício!</p>';
 $lang['TEST5']='<p>Para quem enjoa este barco é perfeito, muito estável. Para além disso é super confortável, parece a nossa casa, consegue-se navegar sem nos molharmos. É para repetir!</p>';
 
-$lang['ACTIV_DISCLOSURE'] = 'Preços incluiem a taxa de IVA em vigor.';
+$lang['ACTIV_DISCLOSURE'] = 'Preços incluem a taxa de IVA em vigor.';
 
 // Events
 $lang['EVENTS_TITLE'] = 'Eventos';
@@ -88,7 +88,7 @@ $lang['CONTACT_NAME_HELP'] = "Por favor introduza o seu nome.";
 $lang['CONTACT_EMAIL_HELP'] = "Por favor introduza o seu email.";
 $lang['CONTACT_PHONE'] = 'Telemóvel';
 $lang['CONTACT_PHONE_HELP'] = "Por favor introduza o seu número de telemóvel.";
-$lang['CONTACT_MSG'] = "A sua Mensagem";
+$lang['CONTACT_MSG'] = "A sua mensagem";
 $lang['CONTACT_MSG_HELP'] = "Por favor introduza a sua mensagem.";
 $lang['CONTACT_SEND'] = "Enviar Mensagem";
 $lang['CONTACT_MORE'] = "Ou contacte-nos directamente<br>Isabels III<br>+351 968 058 417<br>geral@isabelsyachts.pt";
