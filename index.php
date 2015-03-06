@@ -119,13 +119,13 @@ include_once 'common.php';
 					</h3>
                 </div>
             </div>
-            <div class="row" style="margin-bottom: 0cm;">
+<!--             <div class="row" style="margin-bottom: 0cm;">
                 <div class="col-md-2 col-sm-6 col-md-offset-5">
                     <a href="#">
                         <img style="background-color: #ffffff; opacity:0.8; filter:alpha(opacity=80); border-radius: 6px" src="img/logos/logoTurismoDePortugal.png" class="img-responsive img-centered" alt=""></p>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
